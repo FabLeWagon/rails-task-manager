@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Task:</h1>
+
+  <div>
+    <%= @task.title %>
+  </div>
+  <div>
+    <h3>Details:</h3>
+    <%= @task.details %>
+  </div>
+  <br>
+  <%= link_to "Edit this Task", edit_task_path  %>
+  <br>
+  <%= link_to "Back to Tasks", tasks_path  %>
+  <br>
+  <%= link_to "Delete task", delete_task_path(@task), method: :delete %>
+</div>
+
